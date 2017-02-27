@@ -1143,7 +1143,7 @@ def citation_export(querier):
     articles = querier.articles
     for art in articles:
         #print(art.as_citation().decode('ascii') + '\n')
-        print(art.as_citation()+ '\n'.encode('ascii'))
+        print(art.as_citation()+ '\n'.encode('utf-8'))
 
 
 def main():
